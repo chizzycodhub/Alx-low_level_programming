@@ -15,13 +15,13 @@ int main(void)
 	long int first = 1, second = 2;
 	long int next = first + second;
 
-	printf("%ld, %ld, ", first, second);
+	printf("%lu, %lu, ", first, second);
 	while (count <= 98)
 	{
 		if (count == 98)
-			printf("%ld\n", next);
+			printf("%lu\n", next);
 		else
-			printf("%ld, ", next);
+			printf("%lu, ", next);
 		first = second;
 		second = next;
 		next = first + second;
