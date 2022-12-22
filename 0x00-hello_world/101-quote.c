@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <sys/types.h>
+#include <string.h>
 
 /**
  * main - Entry point
@@ -8,7 +8,10 @@
  */
 int main(void)
 {
-	write(STDOUT_FILENO, "and that piece of art is useful
-			\"- Dora korpar, 2015-10-19\n", 59);
+	char *buf = "and that piece of art is useful\" - Dora korpar, 2015-10-19\n";
+	size_t nbytes = strlen(buf);
+	int fd = 1;
+
+	write(fd, buf, nbytes);
 	return (1);
 }
