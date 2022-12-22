@@ -3,7 +3,7 @@
 /**
  * puts2 - print other character starting with the first
  *
- * @str: Pointer to the string 
+ * @str: Pointer to the string
  *
  * Return: Nothing
  */
