@@ -43,9 +43,7 @@ int main(int argc, char *argv[])
 			amount = amount % 2;
 		}
 		if (amount % 1 >= 0)
-		{
 			coins_count += amount;
-		}
 		printf("%d\n", coins_count);
 		return (0);
 	}
