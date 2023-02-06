@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
  * main - A program that adds positive numbers and prints result
@@ -13,21 +14,18 @@ int main(int argc, char *argv[])
 {
 	int index, sum = 0;
 
-	if (argc > 0)
+	while (argc-- > 1)
 	{
-		for (index = 1; argv[index]; index++)
+		for (index = 0; argv[argc][index]; index++)
 		{
-			if (atoi(argv[index]))
-				sum += atoi(argv[index]);
-			else if (!atoi(argv[index]))
+			if (!isdigit(argv[argc][index]))
 			{
 				printf("Error\n");
 				return (1);
 			}
-			else
-				printf("0\n");
 		}
-		printf("%d\n", sum);
+		sum += atoi(argv[argc]);
 	}
+	printf("%d\n", sum);
 	return (0);
 }
