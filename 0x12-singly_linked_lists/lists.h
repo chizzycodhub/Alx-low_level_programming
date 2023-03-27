@@ -2,17 +2,16 @@
 #define LISTS_H
 
 
-/**
+/*
  * File - lists.h
  *
  * Description: This header file contains  all the prototypes and
- *              definations for functions and types written in this 
+ *              definations for functions and types written in this
  *              project.
  */
 
 #include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+
 
 /**
  * struct list_s - singly linked list
