@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
 	int coins_count, amounts;
 
 	coins_count = 0;
-
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -23,7 +22,6 @@ int main(int argc, char *argv[])
 	}
 
 	amounts = atoi(argv[1]);
-
 	while (amounts > 0)
 	{
 		coins_count++;
@@ -49,7 +47,7 @@ int main(int argc, char *argv[])
 		}
 		amounts--;
 	}
-	
+
 	printf("%d\n", coins_count);
 
 	return (0);
